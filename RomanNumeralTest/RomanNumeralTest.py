@@ -18,3 +18,7 @@ class RomanNumeralTest(unittest.TestCase):
     def test_ConvertReturnsIIIWhenProvidedThree(self):
         actual = self.romanNumeral.Convert(3)
         self.assertEqual(actual, "III")
+
+    def test_ConvertReturnsIVWhenProvidedFour(self):
+        actual = self.romanNumeral.Convert(4)
+        self.assertEqual(actual, "IV")
