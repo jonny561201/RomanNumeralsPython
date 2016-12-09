@@ -9,4 +9,6 @@ class RomanNumeral(object):
             return "IV"
         if arabicNumeral == 5:
             return "V"
+        if arabicNumeral == 6:
+            return "VI"
         return "III"
