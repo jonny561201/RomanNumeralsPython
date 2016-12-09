@@ -22,3 +22,7 @@ class RomanNumeralTest(unittest.TestCase):
     def test_ConvertReturnsIVWhenProvidedFour(self):
         actual = self.romanNumeral.Convert(4)
         self.assertEqual(actual, "IV")
+
+    def test_ConvertReturnsVWhenProvidedFive(self):
+        actual = self.romanNumeral.Convert(5)
+        self.assertEqual(actual, "V")
