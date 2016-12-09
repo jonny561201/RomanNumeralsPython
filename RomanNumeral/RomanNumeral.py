@@ -1,14 +1,16 @@
 class RomanNumeral(object):
+    unique_roman_characters = {
+        5: "V",
+        4: "IV",
+        1: "I",
+    }
 
-    def Convert(self, arabicNumeral):
-        if arabicNumeral == 1:
-            return "I"
-        if arabicNumeral == 2:
-            return "II"
-        if arabicNumeral == 4:
-            return "IV"
-        if arabicNumeral == 5:
-            return "V"
-        if arabicNumeral == 6:
-            return "VI"
-        return "III"
+    def convert(self, arabic_numeral):
+        response = ""
+        for value, char in self.unique_roman_characters.iteritems():
+            if value <= arabic_numeral:
+                while arabic_numeral >= value:
+                    arabic_numeral -= value
+                    response += char
+
+        return response
