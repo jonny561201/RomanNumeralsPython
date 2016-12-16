@@ -54,3 +54,11 @@ class RomanNumeralTest(unittest.TestCase):
     def test_convert__returns_c_when_provided_one_hundred(self):
         actual = self.romanNumeral.convert(100)
         self.assertEqual("C", actual)
+
+    def test_convert__returns_cm_when_provided_nine_hundred(self):
+        actual = self.romanNumeral.convert(900)
+        self.assertEqual("CM", actual)
+
+    def test_convert__returns_m_when_provided_one_thousand(self):
+        actual = self.romanNumeral.convert(1000)
+        self.assertEqual("M", actual)

@@ -9,6 +9,8 @@ class RomanNumeral(object):
         50: "L",
         90: "XC",
         100: "C",
+        900: "CM",
+        1000: "M",
     }
 
     def convert(self, arabic_numeral):
