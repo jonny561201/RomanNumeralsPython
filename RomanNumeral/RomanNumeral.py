@@ -3,6 +3,7 @@ class RomanNumeral(object):
         1: "I",
         4: "IV",
         5: "V",
+        10: "X",
     }
 
     def convert(self, arabic_numeral):

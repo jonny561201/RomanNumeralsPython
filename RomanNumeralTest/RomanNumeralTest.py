@@ -30,3 +30,7 @@ class RomanNumeralTest(unittest.TestCase):
     def test_ConvertReturnsVIWhenProvidedSix(self):
         actual = self.romanNumeral.convert(6)
         self.assertEqual("VI", actual)
+
+    def test_convert__returns_x_when_provided_ten(self):
+        actual = self.romanNumeral.convert(10)
+        self.assertEqual("X", actual)
