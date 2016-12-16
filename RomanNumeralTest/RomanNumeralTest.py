@@ -39,4 +39,6 @@ class RomanNumeralTest(unittest.TestCase):
         actual = self.romanNumeral.convert(10)
         self.assertEqual("X", actual)
 
-
+    def test_convert__returns_xl_when_provided_forty(self):
+        actual = self.romanNumeral.convert(40)
+        self.assertEqual("XL", actual)
